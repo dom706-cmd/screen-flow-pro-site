@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://dom706-cmd.github.io/screen-flow-pro-site/sitemap.xml
