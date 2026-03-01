@@ -1,0 +1,14 @@
+{
+  "name": "Screen Flow Pro",
+  "short_name": "Screen Flow Pro",
+  "icons": [
+    {
+      "src": "/assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0D171E",
+  "background_color": "#0D171E",
+  "display": "standalone"
+}

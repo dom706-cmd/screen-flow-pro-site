@@ -1,27 +1,20 @@
-(function(){
-  const btn = document.querySelector('[data-menu]');
-  const menu = document.querySelector('[data-menu-panel]');
-  if(btn && menu){
-    btn.addEventListener('click', () => {
-      const open = menu.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  }
+(() => {
+  // Set current year
+  const y = document.querySelector('[data-year]');
+  if (y) y.textContent = String(new Date().getFullYear());
 
-  const copyBtn = document.querySelector('[data-copy-link]');
-  const toast = document.querySelector('.toast');
-  if(copyBtn){
-    copyBtn.addEventListener('click', async () => {
+  // Simple 'copy email' helper
+  document.querySelectorAll('[data-copy]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const val = btn.getAttribute('data-copy');
       try {
-        await navigator.clipboard.writeText('https://apps.apple.com/us/app/screen-flow-pro-workflows/id6757694636');
-        if(toast){
-          toast.textContent = 'App Store link copied';
-          toast.classList.add('show');
-          setTimeout(()=>toast.classList.remove('show'), 1500);
-        }
-      } catch(e) {
-        window.open('https://apps.apple.com/us/app/screen-flow-pro-workflows/id6757694636', '_blank', 'noopener');
+        await navigator.clipboard.writeText(val);
+        const old = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(() => (btn.textContent = old), 900);
+      } catch {
+        // ignore
       }
     });
-  }
+  });
 })();
