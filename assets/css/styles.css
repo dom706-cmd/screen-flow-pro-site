@@ -201,10 +201,13 @@ details p{margin:8px 0 0; color:var(--muted)}
   overflow:hidden;
   border:1px solid rgba(255,255,255,.12);
   background: rgba(0,0,0,.20);
+  /* keep the walkthrough from taking over the layout */
+  width: min(360px, 100%);
+  margin: 14px auto 0;
 }
 .video-wrap iframe{
   width:100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 9/16; /* Shorts-friendly */
   border:0;
   display:block;
 }
