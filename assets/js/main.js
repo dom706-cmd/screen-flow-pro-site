@@ -1,4 +1,13 @@
 (() => {
+  // Normalize /index.html URLs (helps search engines + sharing)
+  try {
+    const p = window.location.pathname || '';
+    if (p.endsWith('/index.html') || p === '/index.html') {
+      const normalized = p.replace(/index\.html$/, '');
+      const target = (normalized === '' ? '/' : normalized) + window.location.search + window.location.hash;
+      window.location.replace(target);
+    }
+  } catch {}
   // Set current year
   const y = document.querySelector('[data-year]');
   if (y) y.textContent = String(new Date().getFullYear());
