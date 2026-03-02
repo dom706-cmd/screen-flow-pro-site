@@ -26,7 +26,23 @@
 <meta content="#0D171E" name="theme-color"/>
 <link as="style" href="/assets/css/styles.css" rel="preload"/>
 <link href="/assets/css/styles.css" rel="stylesheet"/>
-</head>
+<style>
+/* --- Added visuals + conversion polish --- */
+.brand-logo{height:28px;width:auto;vertical-align:middle;margin-right:10px;border-radius:8px}
+.trustline{margin-top:10px;font-size:14px;opacity:.85}
+.section.screenshots .subhead{margin-top:6px;opacity:.9}
+.shot-strip{display:flex;gap:16px;overflow-x:auto;padding:14px 0 6px;scroll-snap-type:x mandatory}
+.shot-card{min-width:220px;max-width:240px;scroll-snap-align:start;border-radius:18px;overflow:hidden;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08)}
+.shot-card img{width:100%;height:auto;display:block}
+.shot-cap{padding:10px 12px;font-size:14px;opacity:.95}
+.video-card{margin-top:14px}
+.video-thumb{position:relative;display:block;border-radius:18px;overflow:hidden;max-width:520px;border:1px solid rgba(255,255,255,.10)}
+.video-thumb img{width:100%;height:auto;display:block;filter:saturate(1.05)}
+.video-thumb .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:56px;color:white;text-shadow:0 10px 30px rgba(0,0,0,.6)}
+.video-links{margin-top:10px}
+.faq-shot{display:block;max-width:360px;width:100%;height:auto;border-radius:18px;margin:12px 0;border:1px solid rgba(255,255,255,.10)}
+.small{font-size:14px;opacity:.85}
+</style></head>
 <body>
 <header class="nav">
 <div class="container nav-inner">
@@ -39,11 +55,9 @@
 <a href="/how-it-works/">How it works</a>
 <a href="/pricing/">Pricing</a>
 <a href="/support/">Support</a>
-<a href="/qa-bug-report-recorder/">For QA &amp; Support</a>
-<a href="/tutorial-screen-recorder/">For Tutorials</a>
 <a href="/blog/">Blog</a>
 </nav>
-<a class="cta" href="#download">Download</a>
+<a class="cta" href="https://apps.apple.com/us/app/screen-flow-pro-workflows/id6757694636" rel="noopener" target="_blank">Download on the App Store</a>
 </div>
 </header>
 <main>
@@ -53,19 +67,13 @@
 <div class="kicker"><span>NEW</span> Sessions-first screen recording for iPhone + iPad</div>
 <h1>Record across apps.<br/>Then <span style="background:linear-gradient(90deg,var(--aqua),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent">Mark</span> what matters.</h1>
 <p class="lede">
-<b style="color:var(--text)">Screen recording → Sessions → Markers → Bug Report Export.</b><br/>
-          Record across apps, review with timecode + markers, then export a clean MOV or a shareable bug-report package that helps issues get fixed faster.
+          Screen Flow Pro captures your screen with a Broadcast Extension, saves it as a <b style="color:var(--text)">Session</b>,
+          and gives you a fast editor: pinned preview, timeline scrub, markers, keywords, and exports that just work.
         </p>
 <div class="hero-actions" id="download">
-<a class="cta" href="https://apps.apple.com/us/app/screen-flow-pro-workflows/id6757694636" rel="nofollow">View on the App Store</a>
+<a class="cta" href="https://apps.apple.com/us/app/screen-flow-pro-workflows/id6757694636" rel="noopener" target="_blank">View on the App Store</a><p class="trustline">No data collected • No account required • Works on iPhone &amp; iPad</p>
 <a class="btn" href="/features/">Explore features</a>
 <a class="btn" href="#video">Watch walkthrough</a>
-</div>
-<div class="trustline">No data collected • No account required • On-device recordings</div>
-<div class="steps">
-<div class="step"><span class="stepnum">1</span> Record <small>ReplayKit across apps</small></div>
-<div class="step"><span class="stepnum">2</span> Mark <small>Markers + keywords</small></div>
-<div class="step"><span class="stepnum">3</span> Export <small>MOV or bug report</small></div>
 </div>
 <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
 <span class="pill"><i></i> iOS 16+</span>
@@ -93,66 +101,62 @@
 </div>
 </div>
 </section>
-<section class="section">
+<section class="section screenshots" id="screenshots"><h2>Product tour</h2><p class="subhead">See the workflow in action—sessions, markers, exports, and Bug Report Mode.</p><div class="shot-strip"><div class="shot-card"><img alt="Record across apps" loading="lazy" src="/assets/img/screens/record.webp"/><div class="shot-cap">Record across apps</div></div><div class="shot-card"><img alt="Sessions save automatically" loading="lazy" src="/assets/img/screens/sessions.webp"/><div class="shot-cap">Sessions save automatically</div></div><div class="shot-card"><img alt="Mark key moments" loading="lazy" src="/assets/img/screens/mark.webp"/><div class="shot-cap">Mark key moments</div></div><div class="shot-card"><img alt="Export &amp; share fast" loading="lazy" src="/assets/img/screens/export.webp"/><div class="shot-cap">Export &amp; share fast</div></div><div class="shot-card"><img alt="Perfect for bug reports" loading="lazy" src="/assets/img/screens/bug.webp"/><div class="shot-cap">Perfect for bug reports</div></div><div class="shot-card"><img alt="Captions you can send" loading="lazy" src="/assets/img/screens/captions.webp"/><div class="shot-cap">Captions you can send</div></div><div class="shot-card"><img alt="Batch import videos (Pro)" loading="lazy" src="/assets/img/screens/batch.webp"/><div class="shot-cap">Batch import videos (Pro)</div></div><div class="shot-card"><img alt="Share Bug Report correctly" loading="lazy" src="/assets/img/screens/warning.webp"/><div class="shot-cap">Share Bug Report correctly</div></div></div></section><section class="section">
 <div class="container">
 <h2>Built for real workflows</h2>
 <p>Whether you're reporting bugs, documenting a process, or building a tutorial — Sessions keep everything organized.</p>
 <div class="features">
 <div class="card feature">
-<span class="pill"><i></i> Sessions</span><picture><source srcset="/assets/media/shot-sessions.webp" type="image/webp"/><img alt="Sessions list showing auto-saved recordings" class="feature-thumb" loading="lazy" src="/assets/media/shot-sessions.jpg"/></picture>
+<span class="pill"><i></i> Sessions</span>
 <h3>Library that stays clean</h3>
 <p>Every recording becomes a Session you can title, tag, and revisit later — no more mystery files.</p>
 </div>
 <div class="card feature">
-<span class="pill"><i></i> Timeline</span><picture><source srcset="/assets/media/shot-mark.webp" type="image/webp"/><img alt="Marker interface with timecode scrubber" class="feature-thumb" loading="lazy" src="/assets/media/shot-mark.jpg"/></picture>
+<span class="pill"><i></i> Timeline</span>
 <h3>Scrub + markers</h3>
 <p>Pin the preview at the top, scrub fast, and add markers so you can jump right to the moment.</p>
 </div>
 <div class="card feature">
-<span class="pill"><i></i> Keywords</span><picture><source srcset="/assets/media/shot-bug.webp" type="image/webp"/><img alt="Keyword tagging and bug report workflow" class="feature-thumb" loading="lazy" src="/assets/media/shot-bug.jpg"/></picture>
+<span class="pill"><i></i> Keywords</span>
 <h3>Find it later</h3>
 <p>Pro keyword tagging helps you search your own library by project, client, or topic.</p>
 </div>
 <div class="card feature">
-<span class="pill"><i></i> Bug Report</span><picture><source srcset="/assets/media/shot-transcript.webp" type="image/webp"/><img alt="Bug report export showing transcript and summary" class="feature-thumb" loading="lazy" src="/assets/media/shot-transcript.jpg"/></picture>
+<span class="pill"><i></i> Bug Report</span>
 <h3>Share-ready support bundles</h3>
 <p>Transcript + timecodes + markers + video — packaged for high share success in Messages.</p>
 </div>
 <div class="card feature">
-<span class="pill"><i></i> Exports</span><picture><source srcset="/assets/media/shot-export.webp" type="image/webp"/><img alt="Export screen for clean output" class="feature-thumb" loading="lazy" src="/assets/media/shot-export.jpg"/></picture>
+<span class="pill"><i></i> Exports</span>
 <h3>Formats that just work</h3>
 <p>Free export covers the basics. Pro unlocks full quality + workflow presets for different destinations.</p>
 </div>
 <div class="card feature">
-<span class="pill"><i></i> Creator Mode</span><picture><source srcset="/assets/media/shot-social.webp" type="image/webp"/><img alt="Social-ready export templates" class="feature-thumb" loading="lazy" src="/assets/media/shot-social.jpg"/></picture>
+<span class="pill"><i></i> Creator Mode</span>
 <h3>PiP reactions (coming soon)</h3>
 <p>Watch your recording while capturing your facecam — then export a picture‑in‑picture video.</p>
 </div>
 </div>
 </div>
 </section>
-<section class="section"><div class="container"><h2>Screenshots</h2><p>A quick look at the Sessions-first workflow — record, mark, then export.</p><div class="shots"><figure class="shot"><picture><source srcset="/assets/media/shot-record.webp" type="image/webp"/><img alt="Record across apps" class="shot-img" loading="lazy" src="/assets/media/shot-record.jpg"/></picture><figcaption><strong>Record across apps</strong><small>Start a ReplayKit broadcast to capture anything on screen.</small></figcaption></figure><figure class="shot"><picture><source srcset="/assets/media/shot-sessions.webp" type="image/webp"/><img alt="Sessions save automatically" class="shot-img" loading="lazy" src="/assets/media/shot-sessions.jpg"/></picture><figcaption><strong>Sessions save automatically</strong><small>Every recording lands in your Library as a Session.</small></figcaption></figure><figure class="shot"><picture><source srcset="/assets/media/shot-mark.webp" type="image/webp"/><img alt="Mark key moments" class="shot-img" loading="lazy" src="/assets/media/shot-mark.jpg"/></picture><figcaption><strong>Mark key moments</strong><small>Drop timeline markers while reviewing.</small></figcaption></figure><figure class="shot"><picture><source srcset="/assets/media/shot-batch.webp" type="image/webp"/><img alt="Batch import videos (Pro)" class="shot-img" loading="lazy" src="/assets/media/shot-batch.jpg"/></picture><figcaption><strong>Batch import videos (Pro)</strong><small>Import multiple clips into a Session for edits/reviews.</small></figcaption></figure><figure class="shot"><picture><source srcset="/assets/media/shot-social.webp" type="image/webp"/><img alt="Social-ready exports (Pro)" class="shot-img" loading="lazy" src="/assets/media/shot-social.jpg"/></picture><figcaption><strong>Social-ready exports (Pro)</strong><small>Presets for TikTok, Reels, Square, and more.</small></figcaption></figure><figure class="shot"><picture><source srcset="/assets/media/shot-transcript.webp" type="image/webp"/><img alt="Bug report bundle (Pro)" class="shot-img" loading="lazy" src="/assets/media/shot-transcript.jpg"/></picture><figcaption><strong>Bug report bundle (Pro)</strong><small>Share video + transcript + markers as a support bundle.</small></figcaption></figure></div></div></section><section class="section" id="video">
+<section class="section" id="video">
 <div class="container two-col">
 <div class="card feature">
-<h2 style="margin:0 0 10px">Walkthrough video</h2>
-<p>Watch the quick walkthrough: create a Session, drop markers, and export a clean MOV or a shareable bug report package.</p>
-<p style="margin:0"><a class="textlink" href="https://www.youtube.com/watch?v=TmbKyMMnfPY" rel="noopener" target="_blank">Open on YouTube</a></p>
+<h2 style="margin:0 0 10px">Walkthrough video</h2><div class="video-card"><a class="video-thumb" href="https://www.youtube.com/watch?v=TmbKyMMnfPY" rel="noopener" target="_blank"><img alt="Watch the walkthrough on YouTube" loading="lazy" src="/assets/img/screens/mark.webp"/><span class="play">▶</span></a><p class="video-links"><a href="https://www.youtube.com/watch?v=TmbKyMMnfPY" rel="noopener" target="_blank">Watch on YouTube</a></p></div>
+<p>Drop your YouTube/Vimeo link here, or host your own MP4. This section is tuned for conversions.</p>
 <hr class="sep"/>
-<p><b style="color:var(--text)">What you’ll see:</b></p>
+<p><b style="color:var(--text)">Suggested 45–60s script:</b></p>
 <ul class="list">
-<li>Start recording across apps (ReplayKit)</li>
-<li>Review the Session and scrub with timecode</li>
-<li>Add markers + keywords for fast navigation</li>
-<li>Export a clean MOV — or a full bug report package</li>
+<li>Start recording (show Broadcast picker)</li>
+<li>Stop → new Session appears</li>
+<li>Scrub + add a marker</li>
+<li>Bug Report Mode: say “mark”</li>
+<li>Export + share to Messages</li>
 </ul>
 </div>
-<div class="video-wrap" data-yt-id="TmbKyMMnfPY">
-<button aria-label="Play walkthrough video" class="yt-play" type="button">
-<img alt="Screen Flow Pro walkthrough video thumbnail" class="yt-thumb" loading="lazy" src="https://i.ytimg.com/vi/TmbKyMMnfPY/hqdefault.jpg"/>
-<span aria-hidden="true" class="yt-play-icon"></span>
-</button>
+<div class="video-wrap">
+<!-- Replace VIDEO_ID with your YouTube video id -->
 </div>
-<p class="video-fallback">If the embedded player doesn’t load, <a href="https://www.youtube.com/watch?v=TmbKyMMnfPY" rel="noopener" target="_blank">watch on YouTube</a>.</p>
 </div>
 </section>
 <section class="section">
@@ -163,8 +167,11 @@
 <details>
 <summary>Does it record across any app?</summary>
 <p>Yes. It uses a Broadcast Upload Extension so you can record your screen while using other apps.</p>
-<picture><source srcset="/assets/media/shot-record.webp" type="image/webp"/><img alt="Screen broadcast recorder setup" class="faq-img" loading="lazy" src="/assets/media/shot-record.jpg"/></picture></details>
-<details><summary>What is “Say mark”?</summary><p>In Pro Bug Report Mode, Screen Flow Pro can detect the word “mark” in your narration and drop a timestamped marker automatically.</p><p>iOS will ask for Speech Recognition permission the first time you enable this. Audio is processed by Apple’s speech framework to produce the transcript/markers.</p><picture><source srcset="/assets/media/faq-speech.webp" type="image/webp"/><img alt="iOS prompt requesting Speech Recognition permission for Bug Report Mode" class="faq-img" loading="lazy" src="/assets/media/faq-speech.jpg"/></picture></details>
+</details>
+<details>
+<summary>What is “Say mark”?</summary>
+<p>In Pro Bug Report Mode, speech recognition can detect the keyword “mark” and turn it into a timeline marker with a timestamp.</p>
+<img alt="Speech recognition permission prompt" class="faq-shot" loading="lazy" src="/assets/img/screens/captions.webp"/><p class="small">Tip: Allow Speech Recognition if you want timecoded transcripts + voice markers in Bug Report Mode.</p></details>
 <details>
 <summary>What’s included in Pro?</summary>
 <p>Full-quality exports, advanced workflows/presets, keyword tagging, and Bug Report Mode (transcript + markers). Creator Mode (PiP facecam) is coming soon.</p>
@@ -173,18 +180,18 @@
 <summary>Does the app work on iPad?</summary>
 <p>Yes — Screen Flow Pro supports iPhone and iPad with iOS/iPadOS 16 or later.</p>
 </details>
-<details><summary>How do I share a Bug Report export without losing the transcript + markers?</summary><p>Bug Report Export produces multiple files (video + transcript + summary/markers). Don’t use “Save to Photos” — Photos only keeps the video.</p><p>Use the Share Sheet to send via AirDrop/Mail/Messages, or choose “Save to Files” to keep the full bundle together.</p><picture><source srcset="/assets/media/faq-sharewarn.webp" type="image/webp"/><img alt="In-app warning explaining not to save bug report exports to Photos" class="faq-img" loading="lazy" src="/assets/media/faq-sharewarn.jpg"/></picture></details></div>
+</div>
 <div class="card feature" style="margin-top:18px">
 <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between">
 <div>
 <b style="color:var(--text);font-size:18px">Ready to record your next Session?</b>
-<div style="color:var(--muted);margin-top:4px">Download and try Pro free for 7 days (Annual plan).</div>
+<div style="color:var(--muted);margin-top:4px">Download and start free. Upgrade when you need Pro workflows.</div>
 </div>
-<a class="cta" href="https://apps.apple.com/us/app/screen-flow-pro-workflows/id6757694636" rel="nofollow">Download on the App Store</a>
+<a class="cta" href="https://apps.apple.com/us/app/screen-flow-pro-workflows/id6757694636" rel="noopener" target="_blank">Download on the App Store</a>
 </div>
 </div>
 </div>
-</section>
+<details><summary>How should I share Bug Report exports?</summary><p>Bug Report Export creates multiple files (video + transcript + summary). Don’t use “Save to Photos” or you’ll lose the transcript/markers—share directly (AirDrop/Mail/Messages) or Save to Files.</p><img alt="Bug report sharing warning" class="faq-shot" loading="lazy" src="/assets/img/screens/warning.webp"/></details></section>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Screen Flow Pro", "applicationCategory": "MultimediaApplication", "operatingSystem": "iOS 16+, iPadOS 16+", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "category": "Free"}, "description": "Record across apps with a Broadcast Extension, then edit a Session with timeline scrub, markers, keywords, and export workflows.", "image": "https://screenflowpro.app/assets/img/og.png", "url": "https://screenflowpro.app/"}</script>
 </main>
 <footer class="footer">
@@ -203,15 +210,14 @@
 <a href="/pricing/">Pricing</a>
 <a href="/how-it-works/">How it works</a>
 <a href="/support/">Support</a>
-<a href="/qa-bug-report-recorder/">For QA &amp; Support</a>
-<a href="/tutorial-screen-recorder/">For Tutorials</a>
 <a href="/press/">Press kit</a>
 <a href="/blog/">Blog</a>
 <a href="/legal/privacy.html">Privacy</a>
 <a href="/legal/terms.html">Terms</a>
 </div>
 <div class="notice" style="margin-top:14px">
-<b style="color:var(--text)">Mac version</b> is coming soon. Want updates? Email <a href="mailto:Aleandri-Creative@outlook.com">Aleandri-Creative@outlook.com</a>.</div>
+<b style="color:var(--text)">Mac version</b> is coming soon. Join the newsletter on the Support page to get notified.
+      </div>
 </div>
 </div>
 <script defer="" src="/assets/js/main.js"></script>
